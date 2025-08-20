@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Clock, User, Calendar } from "lucide-react";
 import { blogPosts } from "../data/blogPosts";
 
@@ -10,6 +10,7 @@ interface BlogPostProps {
 export default function BlogPost({ isDarkMode }: BlogPostProps) {
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find((p) => p.id === parseInt(id || "0"));
+  const navigate = useNavigate();
 
   if (!post) {
     return (
@@ -73,6 +74,11 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
       }
     }
   };
+
+  // Find related posts (same category, not current post)
+  const relatedPosts = blogPosts
+    .filter((p) => p.category === post?.category && p.id !== post?.id)
+    .slice(0, 3); // Show up to 3 related posts
 
   return (
     <div
@@ -149,7 +155,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
 
         {/* Article content */}
         <div
-          className={isDarkMode ? "dark" : ""}
+          className={isDarkMode ? "text-white" : "text-black"}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
@@ -185,6 +191,79 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
               View all articles
             </Link>
           </div>
+          {/* Related Posts Section */}
+          {relatedPosts.length > 0 && (
+            <div className="mt-12">
+              <h4
+                className={`text-lg font-semibold mb-6 ${
+                  isDarkMode ? "text-white" : "text-black"
+                }`}
+              >
+                Related Posts
+              </h4>
+              <div className="grid gap-6 sm:grid-cols-2">
+                {relatedPosts.map((rel) => (
+                  <div
+                    key={rel.id}
+                    className={`block rounded-xl overflow-hidden shadow-lg transition-all duration-200 hover:scale-105 cursor-pointer ${
+                      isDarkMode
+                        ? "bg-gray-900 hover:bg-gray-800"
+                        : "bg-gray-100 hover:bg-gray-200"
+                    }`}
+                    onClick={() => navigate(`/blog/${rel.id}`)}
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        navigate(`/blog/${rel.id}`);
+                      }
+                    }}
+                    role="button"
+                    aria-label={`Open blog: ${rel.title}`}
+                  >
+                    <img
+                      src={rel.image}
+                      alt={rel.title}
+                      className="w-full h-40 object-cover"
+                    />
+                    <div className="p-4">
+                      <span
+                        className={`inline-block mb-2 px-2 py-1 rounded text-xs font-semibold ${getCategoryColor(
+                          rel.category
+                        )}`}
+                      >
+                        {rel.category}
+                      </span>
+                      <h5
+                        className={`font-bold text-base mb-2 ${
+                          isDarkMode ? "text-white" : "text-black"
+                        }`}
+                      >
+                        {rel.title}
+                      </h5>
+                      <p
+                        className={`text-sm mb-2 ${
+                          isDarkMode ? "text-gray-400" : "text-gray-600"
+                        }`}
+                      >
+                        {rel.excerpt}
+                      </p>
+                      <div
+                        className={`flex items-center text-xs ${
+                          isDarkMode ? "text-gray-500" : "text-gray-500"
+                        }`}
+                      >
+                        <User className="w-4 h-4 mr-1" />
+                        {rel.author}
+                        <span className="mx-2">·</span>
+                        <Clock className="w-4 h-4 mr-1" />
+                        {rel.readTime}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -262,74 +262,9 @@ export const blogPosts: BlogPost[] = [
       <p>Follow App Store and Play Store guidelines.</p>
     `,
   },
-  {
-    id: 19,
-    title: "How to Create a Portfolio Website That Stands Out",
-    excerpt:
-      "A step-by-step guide to creating a professional portfolio that helps you land jobs and freelance gigs.",
-    category: "Web Development",
-    author: "Olivia Davis",
-    date: "Jan 2, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Your portfolio is your digital identity. A well-designed portfolio can 
-      help you stand out from competitors and land jobs.</p>
-
-      <h2>Steps to Build a Portfolio</h2>
-      <h3>1. Showcase Your Best Projects</h3>
-      <p>Highlight 3–5 of your best works with detailed case studies.</p>
-
-      <h3>2. About Me Section</h3>
-      <p>Introduce yourself and highlight your skills, passions, and journey.</p>
-
-      <h3>3. Contact Page</h3>
-      <p>Provide clear contact options for clients and recruiters.</p>
-
-      <h2>Conclusion</h2>
-      <p>A portfolio is not just a website – it’s your personal brand. 
-      Keep it updated, professional, and aligned with your career goals.</p>
-    `,
-  },
-  {
-    id: 20,
-    title: "Best Practices for Writing Clean JavaScript Code",
-    excerpt:
-      "Improve your coding skills with these best practices for writing clean and maintainable JavaScript.",
-    category: "Web Development",
-    author: "Noah Martinez",
-    date: "Jan 5, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Writing clean and maintainable JavaScript code is essential for teamwork 
-      and long-term projects. It improves readability and reduces bugs.</p>
-
-      <h2>Best Practices</h2>
-      <h3>1. Naming Conventions</h3>
-      <p>Use clear and descriptive names for variables and functions.</p>
-
-      <h3>2. Use Comments Wisely</h3>
-      <p>Explain complex logic, but avoid excessive commenting.</p>
-
-      <h3>3. DRY Principle</h3>
-      <p>Don’t Repeat Yourself – reuse and refactor code when possible.</p>
-
-      <h3>4. Consistent Formatting</h3>
-      <p>Use Prettier or ESLint to keep your code consistent.</p>
-
-      <h2>Conclusion</h2>
-      <p>Clean code makes collaboration easier and ensures long-term success 
-      in software development.</p>
-    `,
-  },
-
   // Mobile Apps (first 5 only)
-  {
+
+    {
     id: 13,
     title: "Best UI/UX Design Tips for Mobile Apps",
     excerpt:
@@ -439,6 +374,74 @@ export const blogPosts: BlogPost[] = [
       <p>Wait for Google’s review and approval.</p>
     `,
   },
+
+  {
+    id: 19,
+    title: "How to Create a Portfolio Website That Stands Out",
+    excerpt:
+      "A step-by-step guide to creating a professional portfolio that helps you land jobs and freelance gigs.",
+    category: "Web Development",
+    author: "Olivia Davis",
+    date: "Jan 2, 2025",
+    readTime: "6 min read",
+    image:
+      "https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>Your portfolio is your digital identity. A well-designed portfolio can 
+      help you stand out from competitors and land jobs.</p>
+
+      <h2>Steps to Build a Portfolio</h2>
+      <h3>1. Showcase Your Best Projects</h3>
+      <p>Highlight 3–5 of your best works with detailed case studies.</p>
+
+      <h3>2. About Me Section</h3>
+      <p>Introduce yourself and highlight your skills, passions, and journey.</p>
+
+      <h3>3. Contact Page</h3>
+      <p>Provide clear contact options for clients and recruiters.</p>
+
+      <h2>Conclusion</h2>
+      <p>A portfolio is not just a website – it’s your personal brand. 
+      Keep it updated, professional, and aligned with your career goals.</p>
+    `,
+  },
+  {
+    id: 20,
+    title: "Best Practices for Writing Clean JavaScript Code",
+    excerpt:
+      "Improve your coding skills with these best practices for writing clean and maintainable JavaScript.",
+    category: "Web Development",
+    author: "Noah Martinez",
+    date: "Jan 5, 2025",
+    readTime: "5 min read",
+    image:
+      "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>Writing clean and maintainable JavaScript code is essential for teamwork 
+      and long-term projects. It improves readability and reduces bugs.</p>
+
+      <h2>Best Practices</h2>
+      <h3>1. Naming Conventions</h3>
+      <p>Use clear and descriptive names for variables and functions.</p>
+
+      <h3>2. Use Comments Wisely</h3>
+      <p>Explain complex logic, but avoid excessive commenting.</p>
+
+      <h3>3. DRY Principle</h3>
+      <p>Don’t Repeat Yourself – reuse and refactor code when possible.</p>
+
+      <h3>4. Consistent Formatting</h3>
+      <p>Use Prettier or ESLint to keep your code consistent.</p>
+
+      <h2>Conclusion</h2>
+      <p>Clean code makes collaboration easier and ensures long-term success 
+      in software development.</p>
+    `,
+  },
+
+
 
   // Freelancing (first 5 only)
   {

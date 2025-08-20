@@ -11,7 +11,7 @@ interface BlogGridProps {
 export default function BlogGrid({ searchQuery, isDarkMode }: BlogGridProps) {
   const [activeCategory, setActiveCategory] = useState('All');
   
-  const categories = ['All', 'Web Development', 'Mobile Apps', 'Freelancing', 'Tech'];
+  const categories = ['All', 'Web Development', 'Mobile Apps', 'Freelancing', 'Tech', 'Career Guidance', "AI & Development", 'Cloud Computing', 'Cybersecurity', 'Programming'];
 
   const filteredPosts = useMemo(() => {
     let filtered = blogPosts;

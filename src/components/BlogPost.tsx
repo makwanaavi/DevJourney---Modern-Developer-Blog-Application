@@ -56,6 +56,8 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
           return "bg-gray-600 text-gray-100";
         case "Tech":
           return "bg-gray-500 text-white";
+        case 'Career Guidance':
+          return 'bg-gray-400 text-gray-900';
         default:
           return "bg-gray-800 text-gray-300";
       }
@@ -69,6 +71,8 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
           return "bg-gray-300 text-gray-600";
         case "Tech":
           return "bg-gray-400 text-gray-900";
+        case 'Career Guidance':
+          return 'bg-gray-400 text-gray-900';  
         default:
           return "bg-gray-100 text-gray-800";
       }
@@ -76,9 +80,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
   };
 
   // Find related posts (same category, not current post)
-  const relatedPosts = blogPosts
-    .filter((p) => p.category === post?.category && p.id !== post?.id)
-    .slice(0, 3); // Show up to 3 related posts
+  const relatedPosts = blogPosts.filter((p) => p.category === post?.category && p.id !== post?.id);
 
   return (
     <div
@@ -210,10 +212,14 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
                         ? "bg-gray-900 hover:bg-gray-800"
                         : "bg-gray-100 hover:bg-gray-200"
                     }`}
-                    onClick={() => navigate(`/blog/${rel.id}`)}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                      navigate(`/blog/${rel.id}`);
+                    }}
                     tabIndex={0}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
                         navigate(`/blog/${rel.id}`);
                       }
                     }}

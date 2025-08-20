@@ -23,27 +23,27 @@ export default function Header({
     <header
       className={`${
         isDarkMode ? "bg-black border-gray-800" : "bg-white border-gray-200"
-      } border-b sticky top-0 z-50 transition-colors duration-300`}
+      } border-b sticky top-0 z-50 transition-colors duration-300 shadow-md`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 py-2">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <div
-              className={`w-8 h-8 ${
+              className={`w-10 h-10 ${
                 isDarkMode ? "bg-white" : "bg-black"
-              } rounded-full flex items-center justify-center transition-colors duration-300`}
+              } rounded-full flex items-center justify-center transition-colors duration-300 shadow`}
             >
               <span
                 className={`${
                   isDarkMode ? "text-black" : "text-white"
-                } font-bold text-sm`}
+                } font-bold text-lg`}
               >
                 DJ
               </span>
             </div>
             <span
-              className={`ml-2 text-xl font-bold ${
+              className={`ml-3 text-2xl font-extrabold tracking-tight ${
                 isDarkMode ? "text-white" : "text-black"
               } transition-colors duration-300`}
             >

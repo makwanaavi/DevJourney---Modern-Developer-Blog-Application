@@ -42,7 +42,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
         </div>
       </div>
     );
-  }
+  } 
 
   const getCategoryColor = (category: string) => {
     if (isDarkMode) {
@@ -95,19 +95,19 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
         </Link>
 
         {/* Hero image */}
-        <div className="aspect-w-16 aspect-h-9 mb-8 rounded-xl overflow-hidden">
+        <div className="aspect-w-16 aspect-h-9 mb-8 rounded-2xl overflow-hidden shadow-lg">
           <img
             src={post.image}
             alt={post.title}
-            className="w-full h-64 sm:h-80 object-cover filter "
+            className="w-full h-64 sm:h-80 object-cover rounded-2xl filter"
           />
         </div>
 
         {/* Article header */}
         <header className="mb-8">
-          <div className="flex items-center gap-4 mb-4">
+          <div className="flex flex-wrap items-center gap-4 mb-4">
             <span
-              className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(
+              className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold shadow-sm ${getCategoryColor(
                 post.category
               )}`}
             >
@@ -124,7 +124,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
           </div>
 
           <h1
-            className={`text-3xl sm:text-4xl lg:text-5xl font-bold ${
+            className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight ${
               isDarkMode ? "text-white" : "text-black"
             } mb-4 leading-tight transition-colors duration-300`}
           >
@@ -132,7 +132,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
           </h1>
 
           <div
-            className={`flex items-center ${
+            className={`flex flex-wrap items-center ${
               isDarkMode ? "text-gray-400" : "text-gray-600"
             } text-sm space-x-4`}
           >
@@ -152,7 +152,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
           <article
             className={`prose prose-lg max-w-none transition-colors duration-300 ${
               isDarkMode
-                ? "text-white"
+                ? "prose-invert text-white"
                 : "text-black"
             }`}
             dangerouslySetInnerHTML={{ __html: post.content }}
@@ -196,3 +196,4 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
     </div>
   );
 }
+

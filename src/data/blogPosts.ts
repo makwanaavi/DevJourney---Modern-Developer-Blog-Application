@@ -9,7 +9,6 @@ export interface BlogPost {
   image: string;
   content: string;
 }
-
 export const blogPosts: BlogPost[] = [
   {
     id: 1,

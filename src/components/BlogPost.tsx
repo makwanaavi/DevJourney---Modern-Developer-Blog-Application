@@ -42,7 +42,7 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
         </div>
       </div>
     );
-  } 
+  }
 
   const getCategoryColor = (category: string) => {
     if (isDarkMode) {
@@ -148,16 +148,10 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
         </header>
 
         {/* Article content */}
-        <div className={isDarkMode ? "dark" : ""}>
-          <article
-            className={`prose prose-lg max-w-none transition-colors duration-300 ${
-              isDarkMode
-                ? "prose-invert text-white"
-                : "text-black"
-            }`}
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-        </div>
+        <div
+          className={isDarkMode ? "dark" : ""}
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
 
         {/* Related posts or call to action */}
         <div
@@ -196,4 +190,3 @@ export default function BlogPost({ isDarkMode }: BlogPostProps) {
     </div>
   );
 }
-

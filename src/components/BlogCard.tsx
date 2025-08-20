@@ -19,6 +19,8 @@ export default function BlogCard({ post, isDarkMode }: BlogCardProps) {
           return 'bg-gray-600 text-gray-100';
         case 'Tech':
           return 'bg-gray-500 text-white';
+        case 'Career Guidance':
+          return 'bg-gray-400 text-gray-900';
         default:
           return 'bg-gray-800 text-gray-300';
       }
@@ -32,6 +34,8 @@ export default function BlogCard({ post, isDarkMode }: BlogCardProps) {
           return 'bg-gray-300 text-gray-600';
         case 'Tech':
           return 'bg-gray-400 text-gray-900';
+        case 'Career Guidance':
+          return 'bg-gray-400 text-gray-900';  
         default:
           return 'bg-gray-100 text-gray-800';
       }

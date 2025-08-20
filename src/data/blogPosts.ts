@@ -10,6 +10,7 @@ export interface BlogPost {
   content: string;
 }
 export const blogPosts: BlogPost[] = [
+  // Web Development (first 5 only)
   {
     id: 1,
     title: "Web Development Roadmap for Beginners",
@@ -216,178 +217,7 @@ export const blogPosts: BlogPost[] = [
     `,
   },
 
-  {
-    id: 6,
-    title: "How to Create a Portfolio Website That Stands Out",
-    excerpt:
-      "A step-by-step guide to creating a professional portfolio that helps you land jobs and freelance gigs.",
-    category: "Web Development",
-    author: "Olivia Davis",
-    date: "Jan 2, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Your portfolio is your digital identity. A well-designed portfolio can 
-      help you stand out from competitors and land jobs.</p>
-
-      <h2>Steps to Build a Portfolio</h2>
-      <h3>1. Showcase Your Best Projects</h3>
-      <p>Highlight 3–5 of your best works with detailed case studies.</p>
-
-      <h3>2. About Me Section</h3>
-      <p>Introduce yourself and highlight your skills, passions, and journey.</p>
-
-      <h3>3. Contact Page</h3>
-      <p>Provide clear contact options for clients and recruiters.</p>
-
-      <h2>Conclusion</h2>
-      <p>A portfolio is not just a website – it’s your personal brand. 
-      Keep it updated, professional, and aligned with your career goals.</p>
-    `,
-  },
-
-  {
-    id: 7,
-    title: "Best Practices for Writing Clean JavaScript Code",
-    excerpt:
-      "Improve your coding skills with these best practices for writing clean and maintainable JavaScript.",
-    category: "Web Development",
-    author: "Noah Martinez",
-    date: "Jan 5, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Writing clean and maintainable JavaScript code is essential for teamwork 
-      and long-term projects. It improves readability and reduces bugs.</p>
-
-      <h2>Best Practices</h2>
-      <h3>1. Naming Conventions</h3>
-      <p>Use clear and descriptive names for variables and functions.</p>
-
-      <h3>2. Use Comments Wisely</h3>
-      <p>Explain complex logic, but avoid excessive commenting.</p>
-
-      <h3>3. DRY Principle</h3>
-      <p>Don’t Repeat Yourself – reuse and refactor code when possible.</p>
-
-      <h3>4. Consistent Formatting</h3>
-      <p>Use Prettier or ESLint to keep your code consistent.</p>
-
-      <h2>Conclusion</h2>
-      <p>Clean code makes collaboration easier and ensures long-term success 
-      in software development.</p>
-    `,
-  },
-
-  {
-    id: 8,
-    title: "How to Add Dark Mode in Your Website",
-    excerpt:
-      "Step-by-step guide to implementing dark mode on your website using CSS and JavaScript.",
-    category: "Web Development",
-    author: "Ava Taylor",
-    date: "Jan 8, 2025",
-    readTime: "4 min read",
-    image:
-      "https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Dark mode improves readability at night and reduces eye strain. 
-      Many modern apps and websites now include this feature.</p>
-
-      <h2>Steps to Add Dark Mode</h2>
-      <h3>1. Use CSS Variables</h3>
-      <p>Create light and dark theme colors using variables.</p>
-
-      <h3>2. Add a Toggle Button</h3>
-      <p>Use JavaScript to switch themes with a toggle.</p>
-
-      <h3>3. Save User Preference</h3>
-      <p>Use localStorage so the chosen mode persists across sessions.</p>
-
-      <h2>Conclusion</h2>
-      <p>Dark mode is a small feature but greatly enhances UX. 
-      Implement it in your projects for a modern, user-friendly website.</p>
-    `,
-  },
-
-  {
-    id: 9,
-    title: "SEO Tips Every Developer Should Know",
-    excerpt:
-      "Boost your website's visibility with these essential SEO practices tailored for developers.",
-    category: "Web Development",
-    author: "Ethan Miller",
-    date: "Jan 11, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>SEO (Search Engine Optimization) is not just for marketers. 
-      Developers must build SEO-friendly websites to attract traffic.</p>
-
-      <h2>Important SEO Practices</h2>
-      <h3>1. Add Meta Tags</h3>
-      <p>Use descriptive titles and meta descriptions for better rankings.</p>
-
-      <h3>2. Improve Performance</h3>
-      <p>Fast-loading sites rank higher in search engines.</p>
-
-      <h3>3. Mobile Optimization</h3>
-      <p>Ensure your site works seamlessly on mobile devices.</p>
-
-      <h3>4. Semantic HTML</h3>
-      <p>Use proper tags like &lt;header&gt;, &lt;article&gt;, &lt;footer&gt; 
-      for better SEO and accessibility.</p>
-
-      <h2>Conclusion</h2>
-      <p>Good SEO practices make your site discoverable and user-friendly. 
-      Always optimize for both humans and search engines.</p>
-    `,
-  },
-
-  {
-    id: 10,
-    title: "Top 5 Mistakes Beginner Web Developers Make",
-    excerpt:
-      "Avoid these common mistakes that many beginners make when starting their web development journey.",
-    category: "Web Development",
-    author: "Mia Anderson",
-    date: "Jan 14, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Beginners often struggle in web development by repeating the same 
-      mistakes. Recognizing and avoiding them can save time and effort.</p>
-
-      <h2>Common Mistakes</h2>
-      <h3>1. Skipping Fundamentals</h3>
-      <p>Jumping into frameworks without strong basics leads to confusion.</p>
-
-      <h3>2. Ignoring Git</h3>
-      <p>Version control is a must for any developer.</p>
-
-      <h3>3. Copy-Pasting Code Blindly</h3>
-      <p>Always understand the logic before using code snippets.</p>
-
-      <h3>4. Not Testing on Multiple Devices</h3>
-      <p>Websites should work on all screen sizes.</p>
-
-      <h3>5. Poor Documentation</h3>
-      <p>Not documenting code creates problems later for you and your team.</p>
-
-      <h2>Conclusion</h2>
-      <p>Learn from these mistakes early on and you’ll progress faster in your 
-      web development journey.</p>
-    `,
-  },
+  // App Development (first 5 only)
   {
     id: 11,
     title: "Flutter vs React Native: Which is Best in 2025?",
@@ -432,6 +262,73 @@ export const blogPosts: BlogPost[] = [
       <p>Follow App Store and Play Store guidelines.</p>
     `,
   },
+  {
+    id: 19,
+    title: "How to Create a Portfolio Website That Stands Out",
+    excerpt:
+      "A step-by-step guide to creating a professional portfolio that helps you land jobs and freelance gigs.",
+    category: "Web Development",
+    author: "Olivia Davis",
+    date: "Jan 2, 2025",
+    readTime: "6 min read",
+    image:
+      "https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>Your portfolio is your digital identity. A well-designed portfolio can 
+      help you stand out from competitors and land jobs.</p>
+
+      <h2>Steps to Build a Portfolio</h2>
+      <h3>1. Showcase Your Best Projects</h3>
+      <p>Highlight 3–5 of your best works with detailed case studies.</p>
+
+      <h3>2. About Me Section</h3>
+      <p>Introduce yourself and highlight your skills, passions, and journey.</p>
+
+      <h3>3. Contact Page</h3>
+      <p>Provide clear contact options for clients and recruiters.</p>
+
+      <h2>Conclusion</h2>
+      <p>A portfolio is not just a website – it’s your personal brand. 
+      Keep it updated, professional, and aligned with your career goals.</p>
+    `,
+  },
+  {
+    id: 20,
+    title: "Best Practices for Writing Clean JavaScript Code",
+    excerpt:
+      "Improve your coding skills with these best practices for writing clean and maintainable JavaScript.",
+    category: "Web Development",
+    author: "Noah Martinez",
+    date: "Jan 5, 2025",
+    readTime: "5 min read",
+    image:
+      "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>Writing clean and maintainable JavaScript code is essential for teamwork 
+      and long-term projects. It improves readability and reduces bugs.</p>
+
+      <h2>Best Practices</h2>
+      <h3>1. Naming Conventions</h3>
+      <p>Use clear and descriptive names for variables and functions.</p>
+
+      <h3>2. Use Comments Wisely</h3>
+      <p>Explain complex logic, but avoid excessive commenting.</p>
+
+      <h3>3. DRY Principle</h3>
+      <p>Don’t Repeat Yourself – reuse and refactor code when possible.</p>
+
+      <h3>4. Consistent Formatting</h3>
+      <p>Use Prettier or ESLint to keep your code consistent.</p>
+
+      <h2>Conclusion</h2>
+      <p>Clean code makes collaboration easier and ensures long-term success 
+      in software development.</p>
+    `,
+  },
+
+  // Mobile Apps (first 5 only)
   {
     id: 13,
     title: "Best UI/UX Design Tips for Mobile Apps",
@@ -542,72 +439,8 @@ export const blogPosts: BlogPost[] = [
       <p>Wait for Google’s review and approval.</p>
     `,
   },
-  {
-    id: 18,
-    title: "Why Cross-Platform Mobile Apps is the Future",
-    excerpt:
-      "Understand why businesses prefer cross-platform development over native apps.",
-    category: "Mobile Apps",
-    author: "Henry Parker",
-    date: "Feb 8, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Cross-Platform Development</h2>
-      <p>Cross-platform saves time and cost for app development.</p>
-      <h3>1. Code Reusability</h3>
-      <p>One codebase for Android and iOS.</p>
-      <h3>2. Faster Development</h3>
-      <p>Quicker deployment compared to native development.</p>
-      <h3>3. Cost-Effective</h3>
-      <p>Reduces cost of hiring separate teams for each platform.</p>
-    `,
-  },
-  {
-    id: 19,
-    title: "How to Create Offline-First Mobile Apps",
-    excerpt:
-      "A beginner’s guide to developing offline-first apps that work seamlessly without internet.",
-    category: "App Development",
-    author: "Amelia Thomas",
-    date: "Feb 11, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/1181269/pexels-photo-1181269.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Offline-First Apps</h2>
-      <p>These apps work even without an active internet connection.</p>
-      <h3>1. Local Storage</h3>
-      <p>Use SQLite or local storage for saving data.</p>
-      <h3>2. Sync Mechanism</h3>
-      <p>Sync data once the internet connection is available.</p>
-      <h3>3. Examples</h3>
-      <p>Note-taking apps and offline maps use this approach.</p>
-    `,
-  },
-  {
-    id: 20,
-    title: "Top 5 App Development Trends in 2025",
-    excerpt:
-      "Stay ahead of the curve with these app development trends to watch in 2025.",
-    category: "App Development",
-    author: "William Harris",
-    date: "Feb 14, 2025",
-    readTime: "4 min read",
-    image:
-      "https://images.pexels.com/photos/1181264/pexels-photo-1181264.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Trends in App Development</h2>
-      <p>These trends are revolutionizing the app industry.</p>
-      <h3>1. AI Integration</h3>
-      <p>AI-powered chatbots and personalization features.</p>
-      <h3>2. AR/VR</h3>
-      <p>Augmented and Virtual Reality apps gaining popularity.</p>
-      <h3>3. 5G Adoption</h3>
-      <p>Faster networks enable richer app experiences.</p>
-    `,
-  },
+
+  // Freelancing (first 5 only)
   {
     id: 21,
     title: "How to Start Freelancing with No Experience",
@@ -781,190 +614,8 @@ export const blogPosts: BlogPost[] = [
       <p>Focusing on these skills can make you more competitive and open doors to lucrative freelance projects.</p>
     `,
   },
-  {
-    id: 26,
-    title: "How to Set Freelancing Rates as a Beginner",
-    excerpt:
-      "Learn practical methods to set your freelance rates as a beginner to attract clients and earn fairly.",
-    category: "Freelancing",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Setting rates as a beginner can be tricky. Charging too low may undervalue your work, while too high may scare clients away.</p>
 
-      <h2>Tips to Set Your Rates</h2>
-      <h3>1. Research Market Rates</h3>
-      <p>Check what other freelancers with similar skills charge.</p>
-
-      <h3>2. Decide Hourly or Project-Based</h3>
-      <p>Hourly rates suit ongoing work, while fixed project rates suit defined tasks.</p>
-
-      <h3>3. Factor in Experience</h3>
-      <p>Start lower as a beginner and increase as you gain reviews and expertise.</p>
-
-      <h3>4. Consider Expenses</h3>
-      <p>Include tools, software, taxes, and other costs in your pricing.</p>
-
-      <h2>Conclusion</h2>
-      <p>Be fair but confident in your pricing. Over time, as you gain credibility, you can increase your rates.</p>
-    `,
-  },
-  {
-    id: 27,
-    title: "5 Common Mistakes New Freelancers Make",
-    excerpt:
-      "Avoid these typical pitfalls that beginners often encounter when starting their freelance journey.",
-    category: "Freelancing",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "4 min read",
-    image:
-      "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>New freelancers often make mistakes that can slow their growth. Recognizing these early helps you avoid setbacks.</p>
-
-      <h2>Common Mistakes</h2>
-      <h3>1. Undercharging</h3>
-      <p>Many beginners charge too little, undervaluing their work.</p>
-
-      <h3>2. Poor Communication</h3>
-      <p>Not responding promptly or clearly can lead to client frustration.</p>
-
-      <h3>3. Lack of Contracts</h3>
-      <p>Skipping contracts can create misunderstandings and unpaid work.</p>
-
-      <h3>4. Taking Too Many Projects</h3>
-      <p>Overcommitting can hurt quality and your reputation.</p>
-
-      <h3>5. Ignoring Reviews</h3>
-      <p>Not requesting or showcasing client feedback can limit trust from new clients.</p>
-
-      <h2>Conclusion</h2>
-      <p>Avoiding these mistakes early will set you on the path to a successful freelance career.</p>
-    `,
-  },
-  {
-    id: 28,
-    title: "How to Avoid Scam Clients as a Freelancer",
-    excerpt:
-      "Learn strategies to identify and avoid fraudulent clients, protecting yourself and your freelance business.",
-    category: "Freelancing",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/3184396/pexels-photo-3184396.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Freelancers are sometimes targeted by scam clients. Being aware and cautious can save you time and money.</p>
-
-      <h2>Tips to Avoid Scams</h2>
-      <h3>1. Use Trusted Platforms</h3>
-      <p>Platforms like Upwork and Fiverr offer protection for freelancers.</p>
-
-      <h3>2. Verify Clients</h3>
-      <p>Check their profile, reviews, and previous projects before accepting work.</p>
-
-      <h3>3. Get Written Agreements</h3>
-      <p>Always use contracts detailing scope, payment, and timelines.</p>
-
-      <h3>4. Avoid Upfront Work Without Payment</h3>
-      <p>Never deliver full work before getting at least a partial payment.</p>
-
-      <h2>Conclusion</h2>
-      <p>Being cautious and following best practices ensures your freelancing career stays secure and professional.</p>
-    `,
-  },
-  {
-    id: 29,
-    title: "Top 10 Productivity Tools for Freelancers",
-    excerpt:
-      "Discover the essential productivity tools that can help freelancers manage projects, time, and communication efficiently.",
-    category: "Freelancing",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/3184467/pexels-photo-3184467.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Freelancers need efficient tools to stay productive, manage clients, and deliver projects on time.</p>
-
-      <h2>Top Tools</h2>
-      <h3>1. Trello / Asana</h3>
-      <p>Project management tools to track tasks and deadlines.</p>
-
-      <h3>2. Notion</h3>
-      <p>Organize notes, projects, and client information efficiently.</p>
-
-      <h3>3. Slack / Discord</h3>
-      <p>Communication platforms to stay connected with clients or teams.</p>
-
-      <h3>4. Toggl / Clockify</h3>
-      <p>Time tracking tools to manage hours for billing.</p>
-
-      <h3>5. Canva / Figma</h3>
-      <p>Design and visual content creation tools for freelancers.</p>
-
-      <h3>6. Grammarly / Hemingway</h3>
-      <p>Writing tools to improve clarity and professionalism.</p>
-
-      <h3>7. Google Workspace</h3>
-      <p>Docs, Sheets, and Drive for collaboration and storage.</p>
-
-      <h3>8. Zoom / Google Meet</h3>
-      <p>Video conferencing for client meetings.</p>
-
-      <h3>9. QuickBooks / Wave</h3>
-      <p>Accounting and invoicing tools for freelancers.</p>
-
-      <h3>10. LastPass / 1Password</h3>
-      <p>Secure password management for online accounts.</p>
-
-      <h2>Conclusion</h2>
-      <p>Using these productivity tools helps freelancers save time, stay organized, and focus on delivering quality work.</p>
-    `,
-  },
-  {
-    id: 30,
-    title: "How to Scale Freelancing into a Full Agency",
-    excerpt:
-      "Learn strategies to grow your freelancing business into a full-fledged agency with multiple clients and team members.",
-    category: "Freelancing",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "7 min read",
-    image:
-      "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Freelancing can evolve into a full agency, allowing you to take on bigger projects and grow your business.</p>
-
-      <h2>Steps to Scale Your Freelancing</h2>
-      <h3>1. Streamline Processes</h3>
-      <p>Create standardized workflows for project management and client communication.</p>
-
-      <h3>2. Build a Team</h3>
-      <p>Hire other freelancers or employees to handle specialized tasks.</p>
-
-      <h3>3. Expand Services</h3>
-      <p>Offer complementary services to attract larger clients.</p>
-
-      <h3>4. Marketing and Branding</h3>
-      <p>Invest in a professional brand, website, and marketing strategies.</p>
-
-      <h3>5. Focus on High-Value Clients</h3>
-      <p>Prioritize clients who offer bigger budgets and long-term projects.</p>
-
-      <h2>Conclusion</h2>
-      <p>With careful planning, strategic hiring, and strong client management, you can successfully transition from solo freelancing to running a thriving agency.</p>
-    `,
-  },
+  // Programming (first 5 only)
   {
     id: 31,
     title: "Git & GitHub for Absolute Beginners",
@@ -1125,56 +776,8 @@ export const blogPosts: BlogPost[] = [
       <p>Contributing to open source is a powerful way to grow as a developer, learn new skills, and gain recognition in the tech community.</p>
     `,
   },
-  {
-    id: 36,
-    title: "Top 10 Programming Languages to Learn in 2025",
-    excerpt:
-      "Explore the most popular and in-demand programming languages to learn in 2025 for career growth and opportunities.",
-    category: "Programming",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/3861968/pexels-photo-3861968.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Choosing the right programming language is essential to stay relevant in the tech industry.</p>
 
-      <h2>Top Languages in 2025</h2>
-      <h3>1. Python</h3>
-      <p>Versatile language for web, data science, AI, and automation.</p>
-
-      <h3>2. JavaScript</h3>
-      <p>Core language for web development and frontend frameworks.</p>
-
-      <h3>3. Java</h3>
-      <p>Popular for enterprise solutions, Android, and backend development.</p>
-
-      <h3>4. C#</h3>
-      <p>Used in game development, Windows apps, and enterprise software.</p>
-
-      <h3>5. Go</h3>
-      <p>Growing in cloud computing and backend services.</p>
-
-      <h3>6. Rust</h3>
-      <p>High-performance systems programming and memory safety.</p>
-
-      <h3>7. Kotlin</h3>
-      <p>Modern Android development language with increasing popularity.</p>
-
-      <h3>8. TypeScript</h3>
-      <p>Superset of JavaScript for large-scale application development.</p>
-
-      <h3>9. SQL</h3>
-      <p>Essential for database management and data analysis.</p>
-
-      <h3>10. Swift</h3>
-      <p>Primary language for iOS and macOS app development.</p>
-
-      <h2>Conclusion</h2>
-      <p>Learning these languages will help you stay competitive and open doors to various development opportunities in 2025.</p>
-    `,
-  },
+  // Cybersecurity (first 1 only, since only 1 exists)
   {
     id: 37,
     title: "How to Start a Career in Cybersecurity",
@@ -1210,6 +813,8 @@ export const blogPosts: BlogPost[] = [
       <p>With proper skills, practice, and certifications, you can start a rewarding career in cybersecurity.</p>
     `,
   },
+
+  // Cloud Computing (first 1 only, since only 1 exists)
   {
     id: 38,
     title: "Cloud Computing Simplified: AWS, GCP, Azure",
@@ -1239,44 +844,8 @@ export const blogPosts: BlogPost[] = [
       <p>Understanding cloud platforms is crucial for modern developers and IT professionals seeking growth in 2025.</p>
     `,
   },
-  {
-    id: 39,
-    title: "Top Data Structures Every Developer Must Know",
-    excerpt:
-      "A guide to the essential data structures every developer should understand to write efficient code.",
-    category: "Programming",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Data structures are the foundation of programming, enabling efficient storage and retrieval of data.</p>
 
-      <h2>Must-Know Data Structures</h2>
-      <h3>1. Arrays</h3>
-      <p>Store elements in a contiguous block of memory with fast access.</p>
-
-      <h3>2. Linked Lists</h3>
-      <p>Elements are linked using pointers, allowing efficient insertions and deletions.</p>
-
-      <h3>3. Stack</h3>
-      <p>Last-In-First-Out (LIFO) data structure used in recursion and undo operations.</p>
-
-      <h3>4. Queue</h3>
-      <p>First-In-First-Out (FIFO) structure for scheduling and buffering tasks.</p>
-
-      <h3>5. Trees</h3>
-      <p>Hierarchical structures used in databases and search algorithms.</p>
-
-      <h3>6. Hash Tables</h3>
-      <p>Fast data retrieval using key-value pairs.</p>
-
-      <h2>Conclusion</h2>
-      <p>Mastering these data structures is essential for efficient programming and cracking technical interviews.</p>
-    `,
-  },
+  // AI & Development (first 1 only, since only 1 exists)
   {
     id: 40,
     title: "AI Tools Every Developer Should Try",
@@ -1312,44 +881,8 @@ export const blogPosts: BlogPost[] = [
       <p>Leveraging AI tools can significantly improve coding efficiency, reduce errors, and enhance learning for developers.</p>
     `,
   },
-  {
-    id: 41,
-    title: "Full Stack Developer Roadmap in 2025",
-    excerpt:
-      "A complete guide to becoming a Full Stack Developer in 2025, covering frontend, backend, and essential tools.",
-    category: "Web Development",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "8 min read",
-    image:
-      "https://images.pexels.com/photos/3861971/pexels-photo-3861971.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Full Stack Development is a highly sought-after skill. It involves mastering both frontend and backend development along with deployment and tools.</p>
 
-      <h2>Steps to Become a Full Stack Developer</h2>
-      <h3>1. Learn Frontend</h3>
-      <p>HTML, CSS, JavaScript, and frameworks like React or Vue.</p>
-
-      <h3>2. Learn Backend</h3>
-      <p>Node.js, Express, Python Django, or Ruby on Rails.</p>
-
-      <h3>3. Learn Databases</h3>
-      <p>SQL (MySQL/PostgreSQL) and NoSQL (MongoDB) databases.</p>
-
-      <h3>4. Version Control</h3>
-      <p>Master Git & GitHub for collaboration.</p>
-
-      <h3>5. Deployment</h3>
-      <p>Learn hosting platforms like AWS, Heroku, or Vercel.</p>
-
-      <h3>6. Soft Skills</h3>
-      <p>Problem-solving, teamwork, and communication are crucial.</p>
-
-      <h2>Conclusion</h2>
-      <p>Following this roadmap will help you become a competent Full Stack Developer in 2025.</p>
-    `,
-  },
+  // Career Guidance (first 5 only)
   {
     id: 42,
     title: "Internship vs Freelancing: Which One is Better?",
@@ -1507,111 +1040,62 @@ export const blogPosts: BlogPost[] = [
       <p>With strong skills, a solid portfolio, and focused applications, you can land a remote developer job.</p>
     `,
   },
-  {
-    id: 47,
-    title: "Best Free Resources to Learn Web Development",
-    excerpt:
-      "Discover the top free resources to learn web development from scratch and level up your skills in 2025.",
-    category: "Web Development",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/3184301/pexels-photo-3184301.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Learning web development doesn’t have to be expensive. Plenty of free resources can help you get started.</p>
 
-      <h2>Top Free Resources</h2>
-      <h3>1. FreeCodeCamp</h3>
-      <p>Learn HTML, CSS, JavaScript, and more with guided projects.</p>
-
-      <h3>2. MDN Web Docs</h3>
-      <p>Comprehensive documentation and tutorials for web technologies.</p>
-
-      <h3>3. YouTube Channels</h3>
-      <p>Channels like Traversy Media, The Net Ninja, and Programming with Mosh.</p>
-
-      <h3>4. GitHub</h3>
-      <p>Explore projects, contribute, and learn from open source code.</p>
-
-      <h2>Conclusion</h2>
-      <p>Using these free resources, you can build strong web development skills and grow as a developer without spending money.</p>
-    `,
-  },
-  {
-    id: 48,
-    title: "How to Stay Motivated While Learning Coding",
-    excerpt:
-      "Tips and strategies to maintain motivation, overcome challenges, and keep progressing in your coding journey.",
-    category: "Career Guidance",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "5 min read",
-    image:
-      "https://images.pexels.com/photos/3184469/pexels-photo-3184469.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Coding can be challenging, and staying motivated is key to continuous learning and improvement.</p>
-
-      <h2>Motivation Tips</h2>
-      <h3>1. Set Small Goals</h3>
-      <p>Break learning into manageable tasks and celebrate achievements.</p>
-
-      <h3>2. Build Projects</h3>
-      <p>Practical projects keep learning exciting and hands-on.</p>
-
-      <h3>3. Join Communities</h3>
-      <p>Participate in coding forums, Discord servers, and study groups.</p>
-
-      <h3>4. Take Breaks</h3>
-      <p>Prevent burnout by balancing learning and rest.</p>
-
-      <h2>Conclusion</h2>
-      <p>Staying motivated requires planning, community support, and rewarding progress along your coding journey.</p>
-    `,
-  },
-  {
-    id: 49,
-    title: "Developer Burnout: Causes and Solutions",
-    excerpt:
-      "Understand the common causes of developer burnout and actionable solutions to maintain mental health and productivity.",
-    category: "Career Guidance",
-    author: "Avi Makwana",
-    date: "Aug 20, 2025",
-    readTime: "6 min read",
-    image:
-      "https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=500",
-    content: `
-      <h2>Introduction</h2>
-      <p>Developer burnout is a growing concern caused by stress, overwork, and poor work-life balance.</p>
-
-      <h2>Causes</h2>
-      <h3>1. Long Working Hours</h3>
-      <p>Extended coding sessions without breaks lead to fatigue and burnout.</p>
-
-      <h3>2. High Expectations</h3>
-      <p>Pressure from clients, deadlines, or self-expectations can increase stress.</p>
-
-      <h3>3. Lack of Support</h3>
-      <p>Limited mentorship, feedback, or community support can demotivate developers.</p>
-
-      <h2>Solutions</h2>
-      <h3>1. Time Management</h3>
-      <p>Set schedules, prioritize tasks, and take regular breaks.</p>
-
-      <h3>2. Community & Mentorship</h3>
-      <p>Engage with peers, join forums, and seek guidance when stuck.</p>
-
-      <h3>3. Health & Mindfulness</h3>
-      <p>Exercise, meditation, and hobbies help maintain balance.</p>
-
-      <h2>Conclusion</h2>
-      <p>Understanding burnout and implementing solutions ensures a sustainable and productive developer career.</p>
-    `,
-  },
+  // Technology (first 1 only, since only 1 exists)
   {
     id: 50,
+    title: "Top 10 Productivity Tools for Freelancers",
+    excerpt:
+      "Discover the essential productivity tools that can help freelancers manage projects, time, and communication efficiently.",
+    category: "Freelancing",
+    author: "Avi Makwana",
+    date: "Aug 20, 2025",
+    readTime: "6 min read",
+    image:
+      "https://images.pexels.com/photos/3184467/pexels-photo-3184467.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>Freelancers need efficient tools to stay productive, manage clients, and deliver projects on time.</p>
+
+      <h2>Top Tools</h2>
+      <h3>1. Trello / Asana</h3>
+      <p>Project management tools to track tasks and deadlines.</p>
+
+      <h3>2. Notion</h3>
+      <p>Organize notes, projects, and client information efficiently.</p>
+
+      <h3>3. Slack / Discord</h3>
+      <p>Communication platforms to stay connected with clients or teams.</p>
+
+      <h3>4. Toggl / Clockify</h3>
+      <p>Time tracking tools to manage hours for billing.</p>
+
+      <h3>5. Canva / Figma</h3>
+      <p>Design and visual content creation tools for freelancers.</p>
+
+      <h3>6. Grammarly / Hemingway</h3>
+      <p>Writing tools to improve clarity and professionalism.</p>
+
+      <h3>7. Google Workspace</h3>
+      <p>Docs, Sheets, and Drive for collaboration and storage.</p>
+
+      <h3>8. Zoom / Google Meet</h3>
+      <p>Video conferencing for client meetings.</p>
+
+      <h3>9. QuickBooks / Wave</h3>
+      <p>Accounting and invoicing tools for freelancers.</p>
+
+      <h3>10. LastPass / 1Password</h3>
+      <p>Secure password management for online accounts.</p>
+
+      <h2>Conclusion</h2>
+      <p>Using these productivity tools helps freelancers save time, stay organized, and focus on delivering quality work.</p>
+    `,
+  },
+
+  // Tech (first 5 only)
+  {
+    id: 51,
     title: "Top Future Tech Trends to Learn in 2025",
     excerpt:
       "Stay ahead by learning emerging tech trends in 2025 that are shaping the future of development and innovation.",
@@ -1646,7 +1130,7 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    id: 51,
+    id: 53,
     title: "Emerging Tech Innovations to Watch in 2025",
     excerpt:
       "Explore the latest technology innovations that are set to transform industries in 2025.",
@@ -1671,32 +1155,79 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    id: 52,
-    title: "How to Build a Successful Mobile App in 2025",
+    id: 54,
+    title: "How 6G Will Change Connectivity",
     excerpt:
-      "A practical guide to planning, designing, and launching a mobile app that stands out in 2025.",
-    category: "Mobile App",
+      "Explore the upcoming 6G wireless technology and its potential impact on connectivity, IoT, and digital experiences.",
+    category: "Tech",
     author: "Rahul Verma",
-    date: "Aug 25, 2025",
-    readTime: "7 min read",
+    date: "Sep 5, 2025",
+    readTime: "5 min read",
     image:
-      "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=500",
     content: `
       <h2>Introduction</h2>
-      <p>Building a mobile app in 2025 requires a blend of technical skills, user-centric design, and effective marketing.</p>
-      <h2>Steps to Success</h2>
-      <h3>1. Validate Your Idea</h3>
-      <p>Conduct market research to ensure your app solves a real problem.</p>
-      <h3>2. Focus on UI/UX</h3>
-      <p>Design an intuitive and visually appealing interface for the best user experience.</p>
-      <h3>3. Choose the Right Tech Stack</h3>
-      <p>Select frameworks and tools that suit your app’s requirements and scalability needs.</p>
-      <h3>4. Test Thoroughly</h3>
-      <p>Perform extensive testing on multiple devices to ensure reliability and performance.</p>
-      <h3>5. Launch and Market</h3>
-      <p>Deploy your app on app stores and use digital marketing to reach your target audience.</p>
+      <p>6G is the next generation of wireless technology, promising speeds up to 100 times faster than 5G and enabling new digital experiences.</p>
+      <h2>Key Features of 6G</h2>
+      <h3>1. Ultra-Low Latency</h3>
+      <p>Enables real-time applications like remote surgery and autonomous vehicles.</p>
+      <h3>2. Massive IoT Connectivity</h3>
+      <p>Connects billions of devices seamlessly for smart cities and industries.</p>
+      <h3>3. Enhanced Security</h3>
+      <p>Advanced encryption and authentication for safer communications.</p>
       <h2>Conclusion</h2>
-      <p>With careful planning and execution, you can build a mobile app that succeeds in the competitive 2025 market.</p>
+      <p>6G will redefine connectivity, making futuristic applications a reality by 2030.</p>
+    `,
+  },
+  {
+    id: 55,
+    title: "Green Tech: Innovations for a Sustainable Future",
+    excerpt:
+      "Learn about the latest green technologies that are driving sustainability and combating climate change.",
+    category: "Tech",
+    author: "Emily Watson",
+    date: "Sep 10, 2025",
+    readTime: "6 min read",
+    image:
+      "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>Green technology is at the forefront of the fight against climate change, offering innovative solutions for a sustainable future.</p>
+      <h2>Key Innovations</h2>
+      <h3>1. Renewable Energy</h3>
+      <p>Solar, wind, and hydro power are becoming more efficient and affordable.</p>
+      <h3>2. Smart Grids</h3>
+      <p>Intelligent energy distribution reduces waste and improves reliability.</p>
+      <h3>3. Eco-Friendly Materials</h3>
+      <p>Biodegradable plastics and sustainable building materials are gaining traction.</p>
+      <h2>Conclusion</h2>
+      <p>Adopting green tech is essential for a cleaner, healthier planet in 2025 and beyond.</p>
+    `,
+  },
+  {
+    id: 56,
+    title: "The Impact of AI on Everyday Life in 2025",
+    excerpt:
+      "A look at how artificial intelligence is integrated into daily routines, from smart homes to healthcare.",
+    category: "Tech",
+    author: "Sanjay Patel",
+    date: "Sep 15, 2025",
+    readTime: "7 min read",
+    image:
+      "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=500",
+    content: `
+      <h2>Introduction</h2>
+      <p>AI is no longer a futuristic concept—it's part of our daily lives, making tasks easier and more efficient.</p>
+      <h2>AI in Daily Life</h2>
+      <h3>1. Smart Homes</h3>
+      <p>AI-powered assistants manage lighting, security, and appliances.</p>
+      <h3>2. Healthcare</h3>
+      <p>AI helps diagnose diseases, personalize treatments, and streamline patient care.</p>
+      <h3>3. Transportation</h3>
+      <p>Self-driving cars and intelligent traffic systems are becoming mainstream.</p>
+      <h2>Conclusion</h2>
+      <p>AI's integration into everyday life is improving convenience, safety, and productivity for everyone.</p>
     `,
   },
 ];
+     
